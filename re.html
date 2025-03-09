@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Page</title>
+    <link rel="stylesheet" href="re.css">
+</head>
+<body>
+    <div class="container">
+        <form class="registration-form">
+            <h1 class="header">Proshop</h1>
+            <h2>Register Yourself and Enjoy</h2>
+            <div class="input-group">
+                <label for="username">New Username</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div class="input-group">
+                <label for="password">New Password</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <div class="input-group">
+                <label for="mobile">Mobile Number</label>
+                <input type="tel" id="mobile" name="mobile" required>
+            </div>
+            <div class="input-group">
+                <label for="age">Age</label>
+                <input type="number" id="age" name="age" required>
+            </div>
+            <div class="gender-group">
+                <label>Gender:</label>
+                <label for="female">
+                    <input type="radio" id="female" name="gender" value="female" required> Female
+                </label>
+                <label for="male">
+                    <input type="radio" id="male" name="gender" value="male" required> Male
+                </label>
+                <label for="others">
+                    <input type="radio" id="others" name="gender" value="others" required> Others
+                </label>
+            </div>
+            <div class="input-group">
+                <label for="dob">Date of Birth:</label>
+                <input type="date" id="dob" name="dob" required>
+            </div>
+            <div class="input-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="input-group">
+                <label>Want to proceed?</label>
+                <label for="yes">
+                    <input type="radio" id="yes" name="proceed" value="yes" required> Yes
+                </label>
+                <label for="no">
+                    <input type="radio" id="no" name="proceed" value="no" required> No
+                </label>
+            </div>
+            <a href="pro.html" class="btn btn-primary" target="_blank">Register</a>
+        </form>
+    </div>
+</body>
+</html>

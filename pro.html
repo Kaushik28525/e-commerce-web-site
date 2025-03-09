@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Commerce Website</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+       .product-image {
+            max-width: 100%;
+            height: 200px; 
+            object-fit: cover; 
+        }
+        .product-card {
+            margin: 20px 0;
+            display: flex;
+            flex-direction: column;
+        }
+        .card {
+            height: 100%;
+        }
+        .card-body {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between; 
+            height: 150px; 
+        }
+
+        .card-title {
+            margin-bottom: 10px; 
+        }
+        .card-text {
+            margin-bottom: auto; 
+        }
+        .card:hover {
+            transform: scale(1.04);
+            box-shadow: 3px 5px 5px rgba(1, 1, 1, 0.3); 
+        }
+        .search {
+            display: flex;
+        }
+        .search input {
+            min-width: 600px;
+            padding: 10px 20px;
+            border: 0.5px solid #ccc;
+        }
+        .search button {
+            border: none;
+            padding: 10px 20px;
+        }
+        .navbar {
+            justify-content: space-evenly;
+        }
+        .row-equal {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .col-md-4 {
+            display: flex;
+            flex-direction: column;
+        }
+        .dropbtn {
+
+ color: gray;
+ padding: 12px;
+ font-size: 20px;
+ border: none;
+}
+.dropdown {
+ position: relative;
+ display: inline-block;
+}
+.dropdown-content {
+ display: none;
+ position: absolute;
+ background-color: white;
+ color: blue;
+ min-width: 100%;
+ box-shadow: 0px 9px 14px 0px rgba(0, 0, 0, 0.9);
+}
+.dropdown-content a {
+ color: blue;
+ padding: 12px 16px;
+ text-decoration: none;
+ display: block;
+}
+.dropdown-content a:hover {
+ background-color: white;
+}
+.dropdown:hover .dropdown-content {
+ display: block;
+}
+.dropdown:hover .dropbtn {
+ background-color: white;
+}
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#"><h2>Proshop</h2></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <div class="search">
+                <input type="text" id="search-input" placeholder="search">
+                <button id="search-button">
+                    <img src="search.svg" alt="search">
+                </button>
+            </div>
+        </div>
+            <div class="navbar" style="width: 100%; position:relative;">
+                <ul class="navbar-nav ml-auto" style="position: absolute; justify-content: space-evenly; width: 100%;height: 100%;">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="pro.html"><h4>Home </h4><span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><h4>Products</h4></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="cart.html"><h4>Cart</h4></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html"><h4>About</h4></a>
+                    </li>
+                    <li class="nav-item ">
+                        <div class="dropdown">
+                            <a class="dropbtn" href="lo.html" >Login</a>
+	 	 <div class="dropdown-content">
+	 	 	 <a href="re.html">Sign-up</a>
+ </div>
+</div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="row row-equal">
+         
+            <div class="col-md-4 product-card">
+                <div class="card">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmXVtQCV_Pisiez071_LrhO8s_CoVd7hzazQ&s" class="card-img-top product-image" alt="Product 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Men's T-Shirt</h5>
+                        <p class="card-text">$69.00</p>
+                        <a href="#" class="btn btn-primary">Add to Cart</a>
+                    </div>
+                </div>
+            </div>
+           
+           
+            <div class="col-md-4 product-card">
+                <div class="card">
+                    <img src="https://assets.myntassets.com/dpr_1.5,q_60,w_400,c_limit,fl_progressive/assets/images/27443676/2024/2/8/9bf410e8-ff65-4e0e-bce5-9763b3b3b0f81707402178794AziraFloralPrintPuffSleeveGeorgetteFitFlareMidiDress1.jpg" class="card-img-top product-image" alt="Product 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Women's Dress</h5>
+                        <p class="card-text">$27.00</p>
+                        <a href="#" class="btn btn-primary">Add to Cart</a>
+                    </div>
+                </div>
+            </div>
+          
+            <div class="col-md-4 product-card">
+                <div class="card">
+                    <img src="https://assets.ajio.com/medias/sys_master/root/20240429/rKTE/662ecbb816fd2c6e6ad98329/-473Wx593H-467162954-blue-MODEL2.jpg" class="card-img-top product-image" alt="Product 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Jeans</h5>
+                        <p class="card-text">$30.00</p>
+                        <a href="#" class="btn btn-primary">Add to Cart</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 product-card">
+                 <div class="card">
+                     <img src="https://docsneakers.in/cdn/shop/products/Picsart_23-04-06_12-38-31-264.jpg?v=1680778562&width=533" class="card-img-top product-image" alt="Product 4">
+                     <div class="card-body">
+                        <h5 class="card-title">Sneakers</h5> 
+                        <p class="card-text">$19.00</p>
+                        <a href="#" class="btn btn-primary">Add to Cart</a>
+                     </div>
+                     </div>
+                    </div>
+
+                    <div class="col-md-4 product-card">
+                         <div class="card">
+                            <img src="https://imagescdn.allensolly.com/img/app/product/3/39634487-13301722.jpg?auto=format&w=390" class="card-img-top product-image" alt="Product 5"> <div class="card-body">
+                                <h5 class="card-title">Handbag</h5>
+                                <p class="card-text">$16.00</p>
+                                <a href="#" class="btn btn-primary">Add to Cart</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 product-card">
+                        <div class="card">
+                            <img src="https://www.voyageeyewear.com/cdn/shop/files/2_2d7a94d1-ef5b-4e51-81f2-2e829f15f5e4.jpg?v=1714424530&width=2500" class="card-img-top product-image" alt="Product 6">
+                            <div class="card-body">
+                                <h5 class="card-title">Sunglasses</h5>
+                                <p class="card-text">$150.00</p>
+                                <a href="#" class="btn btn-primary">Add to Cart</a>
+                            </div>
+                        </div>
+                    </div>
+                  
+                    <div class="col-md-4 product-card">
+                        <div class="card">
+                            <img src="https://i.pcmag.com/imagery/roundups/06oZZT0EtPd7odEzxm8azce-41.fit_lim.size_1050x.jpg" class="card-img-top product-image" alt="Product 7">
+                            <div class="card-body">
+                                <h5 class="card-title">Smartphone</h5>
+                                <p class="card-text">$100.00</p>
+                                <a href="#" class="btn btn-primary">Add to Cart</a>
+                            </div>
+                        </div>
+                    </div>
+                  
+                    <div class="col-md-4 product-card">
+                        <div class="card">
+                            <img src="https://static.digit.in/default/a78e4fffb7c3f927fd775b95dd7f72782507dc84.jpeg" class="card-img-top product-image" alt="Product 8">
+                            <div class="card-body">
+                                <h5 class="card-title">acer gaming laptop nitro 5</h5>
+                                <p class="card-text">$1000.00</p>
+                                <a href="#" class="btn btn-primary">Add to Cart</a>
+                            </div>
+                        </div>
+                    </div>
+                 
+                    <div class="col-md-4 product-card">
+                        <div class="card">
+                            <img src="https://elitehubs.com/cdn/shop/files/HYPERX_Cloud_3_Wired_3.5mm_USB_Type-C_USB_Type-A_Gaming_Headphones_Black.webp?v=1724766851" class="card-img-top product-image" alt="Product 9">
+                            <div class="card-body">
+                                <h5 class="card-title">headphones gaming</h5>
+                                <p class="card-text">$50.00</p>
+                                <a href="#" class="btn btn-primary">Add to Cart</a>
+                            </div>
+                        </div>
+                    </div> <div class="col-md-4 product-card">
+                        <div class="card">
+                            <img src="https://www.casio.com/content/dam/casio/product-info/locales/in/en/timepiece/product/watch/A/A1/A15/A158WA-1/assets/A158WA-1_Seq1.jpg.transform/main-visual-sp/image.jpg" class="card-img-top product-image" alt="Product 1">
+                            <div class="card-body">
+                                <h5 class="card-title">casio watch</h5>
+                                <p class="card-text">$11.00</p>
+                                <a href="#" class="btn btn-primary">Add to Cart</a>
+                            </div>
+                        </div>
+                    </div> <div class="col-md-4 product-card">
+                        <div class="card">
+                            <img src="https://m.media-amazon.com/images/I/71qpXciYP1L.jpg" class="card-img-top product-image" alt="Product 1">
+                            <div class="card-body">
+                                <h5 class="card-title">Backpack</h5>
+                                <p class="card-text">$15.00</p>
+                                <a href="#" class="btn btn-primary">Add to Cart</a>
+                            </div>
+                        </div>
+                    </div> <div class="col-md-4 product-card">
+                        <div class="card">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUBhXYSzOWcrrff0lEdTFROy-1DspgxK9Fdw&s" class="card-img-top product-image" alt="Product 1">
+                            <div class="card-body">
+                                <h5 class="card-title">Perfume</h5>
+                                <p class="card-text">$10.00</p>
+                                <a href="#" class="btn btn-primary">Add to Cart</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+          
+            <footer class="bg-light text-center text-lg-start" style="padding: 20px 0; margin-top: 50px;">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-4 col-md-6 mb-4 " >
+                           <a class="text-uppercase" href="about.html"><h5 style="color: black;">About Us </h5></a>
+                            <p>Proshop is your number one source for all things shopping. We are dedicated to providing you with the best products and services.</p>
+                        </div>
+                        <div class="col-lg-4 col-md-6 mb-4">
+                            <h5 class="text-uppercase">Contact Us</h5>
+                            <p>Email: <a href="mailto:info@proshop.com">info@proshop.com</a></p>
+                            <p>Phone: +1 (234) 567-890</p>
+                            <p>Address: 123 E-Commerce St, Headden Leaf , Bo 106</p>
+                        </div>
+                        <div class="col-lg-4 col-md-6 mb-4">
+                            <h5 class="text-uppercase">Follow Us</h5>
+                            <a href="https://www.facebook.com/" class="bt btn-outline-primary btn-sm">Facebook</a>
+                            <a href="https://x.com/?lang=en" class="bt btn-outline-primary btn-sm">Twitter</a>
+                            <a href="https://www.instagram.com/" class="bt btn-outline-primary btn-sm">Instagram</a>
+                            <a href="https://in.linkedin.com/" class="bt btn-outline-primary btn-sm">LinkedIn</a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <hr class="my-4">
+                            <p class="text-muted">© 2024 Proshop, Inc. All rights reserved.</p>
+                            <p class="text-muted">Lead Developer: Kaushik Anand </p>
+                            <p class="text-muted">Assistent Developer: Madara uchiha </p>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        
+         
+        
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('.btn').click(function(event) {
+                event.preventDefault();
+                alert("Your product has been added to your cart!");
+            });
+            $("#search-button").click(function(event) {
+            event.preventDefault(); 
+            $("#search-input").val(""); 
+        });
+        });
+    </script>
+</body>
+</html>

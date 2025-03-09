@@ -1,0 +1,26 @@
+div{
+    height:600px;
+    width:600px;
+    border:2px solid black;
+    background-color:#ffffff;
+    text-align:center;
+    margin-left:550px;
+    margin-top: 125px;
+    margin-right: 600px;
+    background-image:url("https://s3-eu-west-1.amazonaws.com/tpd/logos/60707e42d4b8fb0001737957/0x0.png");
+    background-repeat:no-repeat ;
+    background-size: 100%;
+    border-radius: 15px;
+    
+    }
+    h1{
+    font-family:cursive;
+    }
+    body{
+    background-image:url("https://t3.ftcdn.net/jpg/08/18/68/84/360_F_818688492_NDraELsNDT8CNm966GrV4VuOD2sPcuzR.jpg") ;
+    background-repeat:no-repeat ;
+     background-size: cover;
+    }
+    .reg{
+        color: black;
+    }
